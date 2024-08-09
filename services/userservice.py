@@ -31,9 +31,7 @@ class UserService(AbstractService):
         """
         users = self._get_all_users()
 
-        user = self.storage.get_user_by_id(users, user_id)
-
-        return user
+        return self.storage.get_user_by_id(users, user_id)
     
     def create_user(self, user_data: UserModel) -> str:
         """

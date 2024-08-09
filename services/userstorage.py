@@ -85,8 +85,6 @@ class UserStorage:
                 return "User added to database."
 
         except FileNotFoundError:
-            print("The file was not found.")
+            return "The file was not found."
         except json.JSONDecodeError:
-            print("Error decoding JSON.")
-
-        return "status"
+            return "Error decoding JSON."
