@@ -47,7 +47,7 @@ class UserStorage:
                 return user
         return None
 
-    def _find_last_id(self, users) -> int:
+    def _find_last_id(self, users: list) -> int:
         """
         Search the database for the last id stored
 
